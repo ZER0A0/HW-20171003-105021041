@@ -11,8 +11,8 @@ public class LoginFrame extends JFrame{
 
     private JLabel jlbID = new JLabel("ID：");
     private JLabel jlbPA = new JLabel("Password：");
-    private JTextField jtf = new JTextField("OAO");
-    private JPasswordField jpf = new JPasswordField("33433");
+    private JTextField jtf = new JTextField();
+    private JPasswordField jpf = new JPasswordField();
     private JButton jbtEX = new JButton("Exit");
     private JButton jbtEN = new JButton("Enter");
 
@@ -38,7 +38,7 @@ public class LoginFrame extends JFrame{
         jbtEN.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(jtf.getText().equals("OAO") && new String(jpf.getPassword()).equals("33433")){
+                if(jtf.getText().equals("h304") && new String(jpf.getPassword()).equals("23323456")){
                     MainFrame MF = new MainFrame();
                     MF.setVisible(true);
                     LoginFrame.this.setVisible(false);}
